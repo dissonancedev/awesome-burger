@@ -1,0 +1,12 @@
+sundown.products:
+  title: 'Products'
+  description: 'See products'
+  route_name: product_pages.products
+  menu_name: main
+  weight: 5
+sundown.contact:
+  title: 'Contact'
+  description: 'Contact us'
+  route_name: product_pages.contact
+  menu_name: main
+  weight: 10
