@@ -34,7 +34,10 @@ class ProductStorage extends ContentEntityStorageBase implements SqlEntityStorag
    * ProductStorage constructor.
    *
    * @param EntityTypeInterface $entity_type
+   * @param EntityFieldManagerInterface $entity_field_manager
+   * @param CacheBackendInterface $cache
    * @param MemoryCacheInterface $memory_cache
+   * @param EntityTypeBundleInfoInterface $entity_type_bundle_info
    * @param ProductApi $api
    */
   public function __construct(EntityTypeInterface $entity_type, EntityFieldManagerInterface $entity_field_manager, CacheBackendInterface $cache, MemoryCacheInterface $memory_cache, EntityTypeBundleInfoInterface $entity_type_bundle_info, ProductApi $api) {
