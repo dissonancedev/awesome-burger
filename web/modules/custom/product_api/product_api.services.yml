@@ -1,0 +1,12 @@
+services:
+  product_api:
+    class: Drupal\product_api\ProductApi
+    arguments: ["@http_client", "@serializer"]
+  serializer.normalizer.meal_normalizer:
+    class: Drupal\product_api\Normalizer\MealsNormalizer
+    tags:
+      - { name: normalizer }
+  serializer.normalizer.beer_normalizer:
+    class: Drupal\product_api\Normalizer\BeerNormalizer
+    tags:
+    - { name: normalizer }

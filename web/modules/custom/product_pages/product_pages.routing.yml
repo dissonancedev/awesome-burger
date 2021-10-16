@@ -1,0 +1,29 @@
+product_pages.home:
+  path: '/home'
+  defaults:
+    _controller: '\Drupal\product_pages\Controller\ProductPageController::home'
+    _title: 'Home'
+  requirements:
+    _access: 'TRUE'
+product_pages.contact:
+  path: '/contact'
+  defaults:
+    _controller: '\Drupal\product_pages\Controller\ProductPageController::contact'
+    _title: 'Default'
+  requirements:
+    _access: 'TRUE'
+product_pages.products:
+  path: '/products'
+  defaults:
+    _controller: '\Drupal\product_pages\Controller\ProductPageController::products'
+    _title: 'Products'
+  requirements:
+    _access: 'TRUE'
+product_pages.product:
+  path: '/product/{product_id}'
+  defaults:
+    _controller: '\Drupal\product_pages\Controller\ProductPageController::product'
+    _title: 'Default'
+  requirements:
+    _access: 'TRUE'
+

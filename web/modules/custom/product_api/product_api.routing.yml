@@ -1,0 +1,7 @@
+product_api.partner_api:
+  path: '/api/v1/products'
+  defaults:
+    _controller: '\Drupal\product_api\Controller\PartnerApiController::products'
+  requirements:
+    _access: 'TRUE'
+

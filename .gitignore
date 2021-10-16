@@ -1,0 +1,8 @@
+storage/
+vendor/
+.idea/
+web/sites/*/files
+web/sites/*/settings.local.php
+web/core/
+#web/modules/contrib/
+#web/themes/contrib/

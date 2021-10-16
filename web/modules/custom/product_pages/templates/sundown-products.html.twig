@@ -1,0 +1,8 @@
+<h2>HEADLINE TEXT OF SOMETHING RELATED TO PRODUCTS</h2>
+
+{% for product in products %}
+  <div class="product-teaser" style="background-image: {{ product.img }}">
+    <span class="description">{{ product.name }}</span>
+    <div class="cta-button">Buy</div>
+  </div>
+{% endfor %}

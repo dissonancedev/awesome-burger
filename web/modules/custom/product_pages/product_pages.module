@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file product_pages.module
+ */
+
+/**
+ * Implementes hook_theme().
+ */
+function product_pages_theme() {
+  return [
+    'sundown_frontpage' => [
+      'variables' => [
+        'products' => [],
+      ],
+    ],
+    'sundown_products' => [
+      'variables' => [
+        'products' => [],
+      ],
+    ],
+  ];
+}

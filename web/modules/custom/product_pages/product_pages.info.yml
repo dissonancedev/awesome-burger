@@ -1,0 +1,5 @@
+name: Product Pages
+type: module
+description: Provides pages
+core_version_requirement: 9.x
+package: SundownBoulevard

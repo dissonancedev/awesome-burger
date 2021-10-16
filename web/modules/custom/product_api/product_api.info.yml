@@ -1,0 +1,8 @@
+name: Product API
+type: module
+description: Integration with partner APIs
+core_version_requirement: 9.x
+package: SundownBoulevard
+
+dependencies:
+  - serialization
