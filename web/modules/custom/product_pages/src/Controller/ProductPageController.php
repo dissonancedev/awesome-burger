@@ -60,9 +60,9 @@ class ProductPageController extends ControllerBase {
       }
       elseif ($product instanceof NodeInterface) {
         $items[] = [
-          'id' => $product->id,
-          'name' => $product->name,
-          'img' => $product->image_url,
+          'id' => $product->id(),
+          'name' => $product->get('field_name')->getValue()[0]['value'],
+          'img' => '',
         ];
       }
     }
