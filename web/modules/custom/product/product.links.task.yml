@@ -1,0 +1,20 @@
+product.settings_tab:
+  route_name: product.product_settings
+  title: Settings
+  base_route: product.product_settings
+
+product.view:
+  route_name: entity.product.canonical
+  base_route: entity.product.canonical
+  title: View
+
+product.page_edit:
+  route_name: entity.product.edit_form
+  base_route: entity.product.canonical
+  title: Edit
+
+product.delete_confirm:
+  route_name:  entity.product.delete_form
+  base_route:  entity.product.canonical
+  title: Delete
+  weight: 10

@@ -1,0 +1,11 @@
+view product entity:
+  title: 'View Product entity'
+add product entity:
+  title: 'Add Product entity'
+edit product entity:
+  title: 'Edit Product Entity'
+delete product entity:
+  title: 'Delete Product entity'
+administer product entity:
+  title: 'Administer Product entity'
+  restrict access: TRUE

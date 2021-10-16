@@ -1,0 +1,11 @@
+entity.product.collection:
+  title: 'Product: Products Listing'
+  route_name: entity.product.collection
+  description: 'List Products'
+  parent: system.admin_structure
+  weight: 10
+product.admin.structure.settings:
+  title: Product Settings
+  description: 'Configure Product entity'
+  route_name:  product.product_settings
+  parent: system.admin_structure

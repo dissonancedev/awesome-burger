@@ -1,0 +1,54 @@
+entity.product.canonical:
+  path: '/product/{product}'
+  defaults:
+    # Calls the view controller, defined in the annotation of the product entity
+    _entity_view: 'product'
+    _title: 'Product Content'
+  requirements:
+    # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'product.view'
+
+entity.product.collection:
+  path: '/product/list'
+  defaults:
+    # Calls the list controller, defined in the annotation of the product entity.
+    _entity_list: 'product'
+    _title: 'Product List'
+  requirements:
+    # Checks for permission directly.
+    _permission: 'administer product entity'
+
+product.product_add:
+  path: '/product/add'
+  defaults:
+    # Calls the form.add controller, defined in the product entity.
+    _entity_form: product.add
+    _title: 'Add Product'
+  requirements:
+    _entity_create_access: 'product'
+
+entity.product.edit_form:
+  path: '/product/{product}/edit'
+  defaults:
+    # Calls the form.edit controller, defined in the product entity.
+    _entity_form: product.edit
+    _title: 'Edit Product'
+  requirements:
+    _entity_access: 'product.edit'
+
+entity.product.delete_form:
+  path: '/product/{product}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the product entity.
+    _entity_form: product.delete
+    _title: 'Delete Product'
+  requirements:
+    _entity_access: 'product.delete'
+
+product.product_settings:
+  path: 'admin/structure/product_settings'
+  defaults:
+    _form: '\Drupal\product\Form\ProductSettingsForm'
+    _title: 'Product Settings'
+  requirements:
+    _permission: 'administer product entity'

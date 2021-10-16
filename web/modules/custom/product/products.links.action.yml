@@ -1,0 +1,9 @@
+product.product_add:
+  # Which route will be called by the link
+  route_name: product.product_add
+  title: 'Add Product'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+  - entity.product.collection
+  - entity.product.canonical
