@@ -6,7 +6,7 @@ product_pages.home:
   requirements:
     _access: 'TRUE'
 product_pages.contact:
-  path: '/contact'
+  path: '/contactus'
   defaults:
     _controller: '\Drupal\product_pages\Controller\ProductPageController::contact'
     _title: 'Default'

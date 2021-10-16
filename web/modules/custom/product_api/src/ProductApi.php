@@ -60,7 +60,7 @@ class ProductApi {
     $statusCode = $response->getStatusCode();
 
     if ($statusCode >= 400) {
-      throw new \Exception('Unable to fetch data from API');
+      throw new \Exception(t('Unable to fetch data from API'));
     }
 
     return (string)$response->getBody();

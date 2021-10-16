@@ -9,7 +9,7 @@ class Meal extends BaseModel {
 
   public $meal;
 
-  public $DrinkAlternate;
+  public $drinkAlternate;
 
   public $category;
 
